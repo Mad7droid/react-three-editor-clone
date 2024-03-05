@@ -1,0 +1,78 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build": {
+      "name": "build",
+      "command": "pnpm build",
+      "runAtStart": false
+    },
+    "build:packages": {
+      "name": "build:packages",
+      "command": "pnpm build:packages",
+      "runAtStart": false
+    },
+    "build:apps": {
+      "name": "build:apps",
+      "command": "pnpm build:apps",
+      "runAtStart": false
+    },
+    "clean": {
+      "name": "clean",
+      "command": "pnpm clean",
+      "runAtStart": false
+    },
+    "clean:vite": {
+      "name": "clean:vite",
+      "command": "pnpm clean:vite",
+      "runAtStart": false
+    },
+    "dev": {
+      "name": "dev",
+      "command": "pnpm dev",
+      "runAtStart": true
+    },
+    "dev:link": {
+      "name": "dev:link",
+      "command": "pnpm dev:link",
+      "runAtStart": false
+    },
+    "postinstall": {
+      "name": "postinstall",
+      "command": "pnpm postinstall",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "pnpm test",
+      "runAtStart": false
+    },
+    "typecheck": {
+      "name": "typecheck",
+      "command": "pnpm typecheck",
+      "runAtStart": false
+    },
+    "ci": {
+      "name": "ci",
+      "command": "pnpm ci",
+      "runAtStart": false
+    },
+    "ci:version": {
+      "name": "ci:version",
+      "command": "pnpm ci:version",
+      "runAtStart": false
+    },
+    "ci:release": {
+      "name": "ci:release",
+      "command": "pnpm ci:release",
+      "runAtStart": false
+    }
+  }
+}
